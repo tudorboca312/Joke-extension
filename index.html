@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        body {
+            background-color: #F5F6F8;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            width: 100%;
+            overflow: hidden;
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            padding: 2rem;
+            width: 300px;
+            height: fit-content;
+            border-radius: 15px;
+            background-color: #FFFFFF;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.05);
+        }
+        #title{
+            font-size: 2rem;
+            font-weight: 600;
+            color: #354B5E;
+            margin-bottom: 1rem;
+        }
+        #joke{
+            font-size: 1.2rem;
+            font-weight: 400;
+            color: #7C8A97;
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+        #btn--joke{
+            border: none;
+            border-radius: 2rem;
+            height: fit-content;
+            width: fit-content;
+            padding: 1rem 1.5rem;
+            background-color: #4D9DE0;
+            font-size: 1rem;
+            font-weight: 600;
+            color: #FFFFFF;
+            cursor: pointer;
+            transition: background-color 0.2s ease-in-out;
+        }
+        #btn--joke:hover{
+            background-color: #3C8BDC;
+        }
+    </style>
+
+    <title>Jokes on you</title>
+</head>
+<body>
+
+    <div class="container">
+        <h1 id="title">Jokes on you! 🤡</h1>
+        <h3 id="joke"></h3>
+        <button id="btn--joke" >Tell me a joke!</button>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
